@@ -52,7 +52,7 @@ public class OrderRepository {
         return new ArrayList<>(orderHashMap.keySet());
     }
 
-    public Integer getCountOfUnassignedOrders() {
+    public int getCountOfUnassignedOrders() {
         return orderHashMap.size()-assignedOrderMap.size();
     }
 
